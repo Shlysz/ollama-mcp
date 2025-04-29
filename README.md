@@ -20,8 +20,8 @@
 ### 安装
 
 ```bash
-git clone https://github.com/[username]/ollama-mcp-client
-cd ollama-mcp-client
+git clone https://github.com/Shlysz/ollama-mcp.git
+cd Ollama-mcp-client
 pip install -r requirements.txt
 ```
 
