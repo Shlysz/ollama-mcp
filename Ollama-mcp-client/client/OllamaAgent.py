@@ -1,6 +1,6 @@
 import ollama
 
-from client.OllamaTools import OllamaTools
+from OllamaTools import OllamaTools
 
 
 class OllamaAgent:

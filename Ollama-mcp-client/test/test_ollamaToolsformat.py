@@ -1,4 +1,10 @@
+import os
+import sys
 import unittest
+
+# 添加上级目录到路径中
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from client.OllamaTools import OllamaTools
 
 

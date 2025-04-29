@@ -4,10 +4,10 @@ from typing import Optional
 
 from mcp import ClientSession
 from mcp.client.sse import sse_client
-
+from OllamaAgent import OllamaAgent
+from utils import JsonUtil
 import Constants
-from client.OllamaAgent import OllamaAgent
-from client.utils import JsonUtil
+
 
 
 class MCPClient:
@@ -73,10 +73,6 @@ class MCPClient:
                 break  # 没有 tool_call，结束循环，返回
 
         return final_messages
-
-
-
-
 
 
     async def chat_loop(self):

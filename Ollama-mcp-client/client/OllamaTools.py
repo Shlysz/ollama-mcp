@@ -1,5 +1,4 @@
 
-
 """
 the mcp tool format is like
  {'description': 'Get weather forecast for a specific latitude/longitude', 'input_schema': {'additionalProperties': False, 'properties': {'arg0': {'format': 'double', 'type': 'number'}, 'arg1': {'format': 'double', 'type': 'number'}}, 'required': ['arg0', 'arg1'],
