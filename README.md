@@ -1,5 +1,3 @@
-为你撰写一个更合适的README内容：
-
 # Ollama MCP Client
 
 一个基于Python的客户端实现，用于连接Ollama大语言模型和MCP（Model Context Protocol）服务器，实现模型与外部工具的无缝交互。
@@ -16,10 +14,9 @@
 
 ### 环境要求
 
-- Python 3.8+
-- Ollama
-- MCP兼容的服务器
-
+- Python 3.12+
+- Ollama CLI（安装方法请参考 [Ollama官网](https://ollama.com/)）
+- java 21+
 ### 安装
 
 ```bash
@@ -56,17 +53,27 @@ python client/main.py
 ## 项目结构
 
 ```
-client/
-├── Constants.py        # 配置常量
-├── McpClient.py        # MCP客户端实现
-├── OllamaAgent.py      # Ollama模型代理
-├── OllamaTools.py      # 工具格式转换
-└── mcp_server_config.json  # 服务器配置
+Ollama-MCP-Client
+├── client
+│   ├── Constants.py
+│   ├── McpClient.py
+│   ├── OllamaAgent.py
+│   ├── OllamaTools.py
+│   ├── __init__.py
+│   ├── main.py
+│   ├── mcp_server_config.json
+│   └── utils
+│       ├── JsonUtil.py
+├── requirements.txt
+└── test
+    ├── __init__.py
+    └── test_ollamaToolsformat.py
+
 ```
 
 ## 致谢
 
-本项目受到 [mihirrd/ollama-mcp-client](https://github.com/mihirrd/ollama-mcp-client) 的启发，特此感谢。
+本项目受到 [mihirrd/ollama-mcp-client](https://github.com/mihirrd/ollama-mcp-client) 的启发,它的项目只支持本地不支持sse，本人的相反，特此感谢。
 
 ## 许可证
 
