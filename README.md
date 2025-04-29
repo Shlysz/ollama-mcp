@@ -8,7 +8,7 @@
 - 支持SSE（Server-Sent Events）异步通信
 - 可扩展的工具调用系统
 - 交互式命令行界面
-- 简洁的工具格式转换（MCP格式 ⟷ Ollama格式）
+- 简洁的工具格式转换（Spring AI的 tools_list格式 ⟷ Ollama格式）
 
 ## 快速开始
 
