@@ -1,0 +1,9 @@
+
+spring:
+  ai:
+    mcp:
+      server:
+        name: weather-mcp-server
+        version: 1.0.0
+        type: sync
+        sse-endpoint: /sse
